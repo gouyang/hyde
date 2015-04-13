@@ -2,18 +2,21 @@
   <div class="container">
     <div class="sidebar-about">
       <h1>{{ .Site.Title }}</h1>
-      <p class="lead">
+      <h2 class="lead" align="right">
       {{ with .Site.Params.Description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
-      </p>
+      </h2>
     </div>
-
+    </br>
     <ul class="sidebar-nav">
-      <li><a href="/">Home</a> </li>
-      {{ range .Site.Menus.main }}
-        <li><a href="{{.URL}}"> {{ .Name }} </a></li>
-      {{end}}
+        <li><a href="/">Home</a> </li>
+        <li><a href="/linux/">Linux</a> </li>
+        <li><a href="/go/">Go</a> </li>
+        <li><a href="/python/">Python</a> </li>
+        <li><a href="/about/">About</a> </li>
     </ul>
 
-    <p>{{ with .Site.Params.Copyright }}{{.}}{{ else }}&copy; {{.Now.Format "2006"}}. All rights reserved. {{end}}</p>
   </div>
+</div>
+
+<div class="sidebarright">
 </div>

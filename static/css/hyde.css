@@ -54,10 +54,10 @@ html {
  */
 
 .sidebar {
-  text-align: center;
+  text-align: right;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background-color: #202020;
+  background-color: silver;
 }
 @media (min-width: 48rem) {
   .sidebar {
@@ -66,26 +66,35 @@ html {
     left: 0;
     bottom: 0;
     width: 18rem;
-    text-align: left;
+    text-align: right;
   }
 }
 
 /* Sidebar links */
 .sidebar a {
-  color: #fff;
+  color: olivedrab;
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: #fff;
+  color: olivedrab;
+  text-align: right;
   margin-top: 0;
   font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-size: 2.25rem;
+}
+
+.sidebar-about h2 {
+  color: dimgray;
+  text-align: right;
+  margin-top: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 1.25rem;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
-  padding-left: 0;
+  padding-left: 1;
   list-style: none;
 }
 .sidebar-nav-item {
@@ -99,6 +108,23 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
+/* add right sidebar */
+.sidebarright {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+  background-color: gray;
+}
+@media (min-width: 48rem) {
+  .sidebarright {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: right;
+  }
+}
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
