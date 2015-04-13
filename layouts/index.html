@@ -3,24 +3,23 @@
 
 {{ partial "sidebar.html" . }}
 
-    <div class="content container">
-<div class="posts">
+  <div class="content container">
+  <div class="posts">
 
-      {{ range .Data.Pages }}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ .Permalink }}">
-        {{ .Title }}
-      </a>
-    </h1>
-
+  {{ range first 10 .Data.Pages  }}
+  <div class="summary">
+    <h1><a href="{{ .RelPermalink  }}">{{ .Title  }}</a></h1>
     <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-
-    {{ .Content }}
+    {{ .Summary  }}
   </div>
-  {{ end }}
+    {{ if .Truncated  }}
+    <div class="read-more-link">
+      <a href="{{ .RelPermalink  }}">Read More…</a>
+    </div>
+    {{ end  }}
+  {{ end  }}
 </div>
 </div>
 
-  </body>
+</body>
 </html>
