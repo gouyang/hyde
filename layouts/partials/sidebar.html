@@ -1,5 +1,5 @@
 <div class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="container">
     <div class="sidebar-about">
       <h1>{{ .Site.Title }}</h1>
       <p class="lead">
@@ -10,7 +10,7 @@
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
       {{ range .Site.Menus.main }}
-        <li><a href="{{.Url}}"> {{ .Name }} </a></li>
+        <li><a href="{{.URL}}"> {{ .Name }} </a></li>
       {{end}}
     </ul>
 
