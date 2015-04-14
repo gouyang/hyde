@@ -72,12 +72,12 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: olivedrab;
+  color: DarkCyan; 
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: olivedrab;
+  color: DarkCyan;
   text-align: right;
   margin-top: 0;
   font-family: "Abril Fatface", serif;
